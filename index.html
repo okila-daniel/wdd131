@@ -1,11 +1,126 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals homepage for Daniel Thomas Okila. Learn about my background, interests, Kenya, and web development journey.">
+
+    <meta name="author" content="Daniel Thomas Okila">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Daniel Thomas Okila</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>okilaS</h1>
+
+    <header>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener noreferrer">Scripture</a>
+
+            <a href="project/">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Daniel Thomas Okila</h1>
+
+        <div class="cards">
+
+            <section class="card about-card">
+                <h2>About Me</h2>
+
+                <div class="card-content">
+                    <div class="about-text">
+                        <p>
+                            Hello! My name is Daniel Thomas Okila.
+                            I am from Kenya and I am currently studying
+                            through BYU-Pathway Worldwide.
+                        </p>
+
+                        <p>
+                            I have a strong interest in technology,
+                            software development, and creating solutions
+                            that make a positive difference in people's lives.
+                            I enjoy learning new skills and exploring how
+                            technology can solve real-world problems.
+                        </p>
+
+                        <p>
+                            My goal is to become a skilled software developer
+                            and use my knowledge to build meaningful digital
+                            experiences.
+                        </p>
+                    </div>
+
+                    <img
+                        src="images/profile.webp"
+                        alt="Portrait of Daniel Thomas Okila"
+                        width="250"
+                        height="300"
+                    >
+                </div>
+            </section>
+
+            <section class="card country-card">
+                <h2>Kenya</h2>
+
+                <div class="card-content country-content">
+                    <figure>
+                        <img
+                            src="images/kenya.webp"
+                            alt="Beautiful landscape representing Kenya"
+                            width="250"
+                            height="300"
+                        >
+                        <figcaption>Kenya – My home country</figcaption>
+                    </figure>
+
+                    <div>
+                        <p>
+                            Kenya is a beautiful country located in East Africa.
+                            It is known for its diverse cultures, wildlife,
+                            beautiful landscapes, and welcoming people.
+                        </p>
+
+                        <p>
+                            From the Great Rift Valley to the Indian Ocean,
+                            Kenya offers a rich variety of natural beauty.
+                            Nairobi is its capital city and an important
+                            center for business, education, and technology.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Daniel Thomas Okila | Kenya
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
