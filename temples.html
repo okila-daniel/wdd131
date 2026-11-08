@@ -7,31 +7,25 @@
     <meta name="description" content="Explore beautiful temples around the world in this Temple Album.">
     <meta name="author" content="Daniel Okila">
 
-    <title>Temple Album | WDD131</title>
+    <title>Temple Album | WDD 131</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="styles1/temples.css">
-    <link rel="stylesheet" href="styles1/temples-large.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
 
-    <!-- JavaScript File -->
-    <script src="scripts1/temples.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
-
     <header>
-        <div class="header-container">
+        <div class="header-content">
+            <a class="logo" href="temples.html">Temple Album</a>
 
-            <a href="temples.html" class="logo">Temple Album</a>
-
-            <button id="menu-button"
-                aria-label="Open navigation menu"
-                aria-expanded="false">
+            <button id="menu-button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navigation">
                 ☰
             </button>
 
@@ -42,69 +36,65 @@
                 <a href="#large">Large</a>
                 <a href="#small">Small</a>
             </nav>
-
         </div>
     </header>
 
     <main>
-
         <h1>Beautiful Temples Around the World</h1>
 
         <div class="temple-grid">
 
             <figure id="old">
-                <img src="images1/salt lake.wepb" alt="Salt Lake Temple">
-                <figcaption>Salt Lake Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images1/rome.webp" alt="Rome Italy Temple">
-                <figcaption>Rome Italy Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images1/nairobi.webp" alt="Nairobi Kenya Temple">
+                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple">
                 <figcaption>Nairobi Kenya Temple</figcaption>
             </figure>
 
             <figure id="new">
-                <img src="images1/nairobi.webp" alt="Nairobi Kenya Temple">
-                <figcaption>Nairobi Kenya Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images1/rome.webp" alt="Rome Italy Temple">
+                <img src="images/rome.webp" alt="Rome Italy Temple">
                 <figcaption>Rome Italy Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images1/salt_lake.wepb" alt="Salt Lake Temple">
-                <figcaption>Salt Lake Temple</figcaption>
             </figure>
 
             <figure id="large">
-                <img src="images1/rome.webp" alt="Rome Italy Temple">
+                <img src="images/salt-lake.webp" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple">
+                <figcaption>Nairobi Kenya Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rome.webp" alt="Rome Italy Temple">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure id="small">
+                <img src="images/salt-lake.webp" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rome.webp" alt="Rome Italy Temple">
                 <figcaption>Rome Italy Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images1/nairobi.webp" alt="Nairobi Kenya Temple">
+                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple">
                 <figcaption>Nairobi Kenya Temple</figcaption>
             </figure>
 
-            <figure id="small">
-                <img src="images1/salt_lake.webp" alt="Salt Lake Temple">
+            <figure>
+                <img src="images/salt-lake.webp" alt="Salt Lake Temple">
                 <figcaption>Salt Lake Temple</figcaption>
             </figure>
 
         </div>
-
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Daniel Okila | Kenya</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>&copy; <span id="current-year"></span> Daniel Okila | Kenya</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
-
 </body>
 </html>

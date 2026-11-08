@@ -1,8 +1,5 @@
 
-/* =========================
-   GENERAL STYLES
-========================= */
-
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,60 +8,52 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f6f9;
     color: #172b4d;
+    background-color: #f4f6f9;
     line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
-
+/* Header */
 header {
     background-color: #102a43;
     color: white;
     padding: 1rem;
 }
 
-.header-container {
-    max-width: 1200px;
+.header-content {
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    font-weight: 700;
     color: white;
     text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
-/* =========================
-   HAMBURGER BUTTON
-========================= */
-
+/* Menu button */
 #menu-button {
-    background: none;
+    background: transparent;
     border: none;
     color: white;
     font-size: 2rem;
     cursor: pointer;
-    padding: 0.3rem 0.6rem;
+    padding: 0.2rem 0.5rem;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
-
+/* Navigation */
 nav {
     display: none;
     flex-direction: column;
     width: 100%;
-    text-align: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 nav.open {
@@ -74,9 +63,10 @@ nav.open {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.7rem;
+    text-align: center;
+    border-radius: 5px;
     font-weight: 600;
-    transition: 0.3s;
 }
 
 nav a:hover,
@@ -85,28 +75,22 @@ nav a:focus {
     color: #102a43;
 }
 
-/* =========================
-   MAIN CONTENT
-========================= */
-
+/* Main content */
 main {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
+    color: #102a43;
     text-align: center;
     margin-bottom: 2rem;
-    color: #102a43;
     font-size: 1.8rem;
 }
 
-/* =========================
-   TEMPLE GRID
-========================= */
-
+/* Temple grid */
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -116,41 +100,39 @@ h1 {
 figure {
     background-color: white;
     padding: 1rem;
-    text-align: center;
     border-radius: 8px;
+    text-align: center;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
-
-figure img {
-    display: block;
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-figcaption {
-    font-weight: 600;
-    padding-top: 1rem;
-    color: #102a43;
-    font-size: 0.95rem;
 }
 
 figure:hover {
     transform: translateY(-5px);
 }
 
-/* =========================
-   FOOTER
-========================= */
+figure img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
+figcaption {
+    color: #102a43;
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+
+/* Footer */
 footer {
     background-color: #102a43;
     color: white;
     text-align: center;
     padding: 1.5rem;
-    line-height: 1.8;
     margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
     font-size: 0.9rem;
 }
