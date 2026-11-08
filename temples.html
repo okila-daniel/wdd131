@@ -20,81 +20,119 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-content">
             <a class="logo" href="temples.html">Temple Album</a>
 
-            <button id="menu-button" aria-label="Open navigation menu"
-                aria-expanded="false" aria-controls="navigation">
-                ☰
+            <button class="menu-button" id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                <span class="menu-icon"></span>
             </button>
 
-            <nav id="navigation">
-                <a href="temples.html">Home</a>
-                <a href="#old">Old</a>
-                <a href="#new">New</a>
-                <a href="#large">Large</a>
-                <a href="#small">Small</a>
+            <nav class="navigation" id="primary-navigation">
+                <a href="#" class="nav-link active" data-filter="all">Home</a>
+                <a href="#" class="nav-link" data-filter="old">Old</a>
+                <a href="#" class="nav-link" data-filter="new">New</a>
+                <a href="#" class="nav-link" data-filter="large">Large</a>
+                <a href="#" class="nav-link" data-filter="small">Small</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="main-content">
         <h1>Beautiful Temples Around the World</h1>
 
-        <div class="temple-grid">
+        <section class="temple-grid" id="temple-grid" aria-label="Temple photo album">
 
-            <figure id="old">
-                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple">
-                <figcaption>Nairobi Kenya Temple</figcaption>
+            <figure class="temple-card" data-category="new">
+                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple" loading="lazy">
+                <figcaption>
+                    <h2>Nairobi Kenya Temple</h2>
+                    <p><strong>Location:</strong> Nairobi, Kenya</p>
+                    <p><strong>Dedicated:</strong> 2017</p>
+                </figcaption>
             </figure>
 
-            <figure id="new">
-                <img src="images/rome.webp" alt="Rome Italy Temple">
-                <figcaption>Rome Italy Temple</figcaption>
+            <figure class="temple-card" data-category="new">
+                <img src="images/rome.webp" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>
+                    <h2>Rome Italy Temple</h2>
+                    <p><strong>Location:</strong> Rome, Italy</p>
+                    <p><strong>Dedicated:</strong> 2019</p>
+                </figcaption>
             </figure>
 
-            <figure id="large">
-                <img src="images/salt-lake.webp" alt="Salt Lake Temple">
-                <figcaption>Salt Lake Temple</figcaption>
+            <figure class="temple-card" data-category="old">
+                <img src="images/salt-lake.webp" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>
+                    <h2>Salt Lake Temple</h2>
+                    <p><strong>Location:</strong> Salt Lake City, Utah</p>
+                    <p><strong>Dedicated:</strong> 1893</p>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple">
-                <figcaption>Nairobi Kenya Temple</figcaption>
+            <figure class="temple-card" data-category="new">
+                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple grounds" loading="lazy">
+                <figcaption>
+                    <h2>Nairobi Kenya Temple</h2>
+                    <p><strong>Location:</strong> Nairobi, Kenya</p>
+                    <p><strong>Dedicated:</strong> 2017</p>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="images/rome.webp" alt="Rome Italy Temple">
-                <figcaption>Rome Italy Temple</figcaption>
+            <figure class="temple-card" data-category="new">
+                <img src="images/rome.webp" alt="Rome Italy Temple grounds" loading="lazy">
+                <figcaption>
+                    <h2>Rome Italy Temple</h2>
+                    <p><strong>Location:</strong> Rome, Italy</p>
+                    <p><strong>Dedicated:</strong> 2019</p>
+                </figcaption>
             </figure>
 
-            <figure id="small">
-                <img src="images/salt-lake.webp" alt="Salt Lake Temple">
-                <figcaption>Salt Lake Temple</figcaption>
+            <figure class="temple-card" data-category="old">
+                <img src="images/salt-lake.webp" alt="Salt Lake Temple architecture" loading="lazy">
+                <figcaption>
+                    <h2>Salt Lake Temple</h2>
+                    <p><strong>Location:</strong> Salt Lake City, Utah</p>
+                    <p><strong>Dedicated:</strong> 1893</p>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="images/rome.webp" alt="Rome Italy Temple">
-                <figcaption>Rome Italy Temple</figcaption>
+            <figure class="temple-card" data-category="large">
+                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple exterior" loading="lazy">
+                <figcaption>
+                    <h2>Nairobi Kenya Temple</h2>
+                    <p><strong>Location:</strong> Nairobi, Kenya</p>
+                    <p><strong>Dedicated:</strong> 2017</p>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="images/nairobi.webp" alt="Nairobi Kenya Temple">
-                <figcaption>Nairobi Kenya Temple</figcaption>
+            <figure class="temple-card" data-category="large">
+                <img src="images/rome.webp" alt="Rome Italy Temple exterior" loading="lazy">
+                <figcaption>
+                    <h2>Rome Italy Temple</h2>
+                    <p><strong>Location:</strong> Rome, Italy</p>
+                    <p><strong>Dedicated:</strong> 2019</p>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="images/salt-lake.webp" alt="Salt Lake Temple">
-                <figcaption>Salt Lake Temple</figcaption>
+            <figure class="temple-card" data-category="large">
+                <img src="images/salt-lake.webp" alt="Salt Lake Temple exterior" loading="lazy">
+                <figcaption>
+                    <h2>Salt Lake Temple</h2>
+                    <p><strong>Location:</strong> Salt Lake City, Utah</p>
+                    <p><strong>Dedicated:</strong> 1893</p>
+                </figcaption>
             </figure>
 
-        </div>
+        </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; <span id="current-year"></span> Daniel Okila | Kenya</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
+        <p class="last-modified">Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>
