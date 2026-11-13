@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Kenya, the heart of East Africa. Explore its geography, culture, national facts, and weather.">
+    <meta name="author" content="Daniel Okila">
+    <title>Kenya | The Heart of East Africa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Kenya</h1>
+        <p>The Heart of East Africa</p>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Kenya landscape">
+            <picture>
+                <source
+                    media="(min-width: 700px)"
+                    srcset="images/kenya-large.webp"
+                    type="image/webp">
+                <img
+                    src="images/kenya-small.webp"
+                    alt="Beautiful Kenyan landscape with open savannah and mountains"
+                    class="hero-image"
+                    width="1200"
+                    height="800">
+            </picture>
+        </section>
+
+        <section class="country-info content-card">
+            <h2>About Kenya</h2>
+            <p>
+                Kenya is a beautiful country in East Africa, known for its
+                diverse landscapes, rich cultural heritage, wildlife, and
+                welcoming communities. From the Great Rift Valley to the
+                Indian Ocean coastline, Kenya offers remarkable natural
+                beauty and history.
+            </p>
+
+            <div class="facts-grid">
+                <div class="fact">
+                    <h3>Capital</h3>
+                    <p>Nairobi</p>
+                </div>
+
+                <div class="fact">
+                    <h3>Continent</h3>
+                    <p>Africa</p>
+                </div>
+
+                <div class="fact">
+                    <h3>Area</h3>
+                    <p>580,367 km²</p>
+                </div>
+
+                <div class="fact">
+                    <h3>Languages</h3>
+                    <p>Swahili and English</p>
+                </div>
+
+                <div class="fact">
+                    <h3>Currency</h3>
+                    <p>Kenyan Shilling (KES)</p>
+                </div>
+
+                <div class="fact">
+                    <h3>Independence</h3>
+                    <p>12 December 1963</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather-info content-card">
+            <h2>Weather</h2>
+
+            <div class="weather-heading">
+                <h3>Current Conditions</h3>
+                <img
+                    src="images/weather.svg"
+                    alt="Partly cloudy weather"
+                    class="weather-icon"
+                    width="64"
+                    height="64">
+            </div>
+
+            <div class="weather-details">
+                <p><strong>Location:</strong> Nairobi</p>
+                <p><strong>Temperature:</strong> <span id="temperature">18</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed">10</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="current-year"></span> | Kenya – The Heart of East Africa
+        </p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>Designed and developed for WDD131.</p>
+    </footer>
+</body>
+</html>
